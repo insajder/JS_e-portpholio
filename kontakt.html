@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dobrodosli na moj sajt">
+    <meta name="keywords" content="e-portfolio, pocetna, kontakt">
+    <meta name="language" content="Srpski, Serbian, Serbisch">
+    <meta name="author" content="Jelena Ilic">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>E-portfolio</title>
+</head>
+
+<body>
+    <div class="pocetna">
+        <div class="nav" id="idNav">
+            <a href="index.html" id="logo"><i class="fas fa-igloo"></i></a>
+            <a href="index.html">Početna</a>
+            <a href="biografija.html">Biografija</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="animacije.html">Animacije</a>
+            <a href="kontakt.html" class="active">Kontakt</a>
+            <a href="tabela.html">Tabela</a>
+            <a href="#" class="icon" onclick="navigacija()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="kontakt">
+            <form action="" name="MojaForma" method="GET">
+                <label for="ime"><i class="fas fa-user"></i>Ime</label>
+                <input type="text" id="ime" name="ime" placeholder="Vase ime.." required onchange="ocistiGresku('poruka-Ime')"><br>
+                <p id="poruka-Ime"></p>
+
+                <label for="prezime"><i class="fas fa-user"></i>Prezime</label>
+                <input type="text" id="prezime" name="prezime" placeholder="Vase prezime.." required onchange="ocistiGresku('poruka-Prezime')">
+                <p id="poruka-Prezime"></p>
+
+                <label for="email"><i class="fas fa-envelope"></i>E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Vas email.." required onchange="ocistiGresku('poruka-Email')">
+                <p id="poruka-Email"></p>
+
+                <label for="pass"><i class="fas fa-key"></i>Lozinka</label>
+                <input type="password" id="pass" name="pass" placeholder="Lozinka.." required onchange="ocistiGresku('poruka-Lozinka')">
+                <p id="poruka-Lozinka"></p>
+
+                <label for="pass2"><i class="fas fa-unlock-alt"></i>Potvrdite lozinku</label>
+                <input type="password" id="pass2" name="pass2" placeholder="Potvrdite lozinku.." required onchange="ocistiGresku('poruka-Lozinka2')">
+                <p id="poruka-Lozinka2"></p>
+
+                <button type="submit" class="btnProvera" onclick="provera()">
+                Prosledi
+            </button>
+            </form>
+
+        </div>
+        <div class="footer footer2">
+            <footer>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="biografija.html">Biografija</a></li>
+                        <li><a href="galerija.html">Galerija</a></li>
+                        <li><a href="animacije.html">Animacije</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="tabela.html">Tabela</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i>YouTube</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a></li>
+                        <li><a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i>Pinterest</a></li>
+                    </ul>
+                </div>
+            </footer>
+            <hr>
+            <p><i class="far fa-copyright"></i>CopyRight 2020/21</p>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

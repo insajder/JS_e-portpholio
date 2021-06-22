@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dobrodosli na moj sajt">
+    <meta name="keywords" content="e-portfolio, pocetna, galerija">
+    <meta name="language" content="Srpski, Serbian, Serbisch">
+    <meta name="author" content="Jelena Ilic">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>E-portfolio</title>
+</head>
+
+<body>
+    <div class="pocetna">
+        <div class="nav" id="idNav">
+            <a href="index.html" id="logo"><i class="fas fa-igloo"></i></a>
+            <a href="index.html">Početna</a>
+            <a href="biografija.html">Biografija</a>
+            <a href="galerija.html" class="active">Galerija</a>
+            <a href="animacije.html">Animacije</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="tabela.html">Tabela</a>
+            <a href="#" class="icon" onclick="navigacija()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="galerija">
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked />
+                <li class="slide-container">
+                    <div class="slide">
+                        <p class="slikaNaslov">Fruška gora <time>20.05.2019.</time> </p>
+                        <img src="img/s1.jpg" />
+                    </div>
+                    <div class="nav2">
+                        <label for="img-5" class="prev">&#x2039;</label>
+                        <label for="img-2" class="next">&#x203a;</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-2" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <p class="slikaNaslov">Stara planina <time>10.11.2019.</time> </p>
+                        <img src="img/s2.jpg" />
+                    </div>
+                    <div class="nav2">
+                        <label for="img-1" class="prev">&#x2039;</label>
+                        <label for="img-3" class="next">&#x203a;</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-3" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <p class="slikaNaslov">Vlasinsko jezero <time>07.01.2020.</time> </p>
+                        <img src="img/s3.jpg" />
+                    </div>
+                    <div class="nav2">
+                        <label for="img-2" class="prev">&#x2039;</label>
+                        <label for="img-4" class="next">&#x203a;</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-4" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <p class="slikaNaslov">Palićko jezero <time>29.08.2019.</time> </p>
+                        <img src="img/s4.jpg" />
+                    </div>
+                    <div class="nav2">
+                        <label for="img-3" class="prev">&#x2039;</label>
+                        <label for="img-5" class="next">&#x203a;</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-5" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <p class="slikaNaslov">Rosomački lonci <time>07.07.2020.</time> </p>
+                        <img src="img/s5.jpg" />
+                    </div>
+                    <div class="nav2">
+                        <label for="img-4" class="prev">&#x2039;</label>
+                        <label for="img-1" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <li class="nav-dots">
+                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                    <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                    <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                </li>
+            </ul>
+
+        </div>
+        <div class="footer">
+            <footer>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="biografija.html">Biografija</a></li>
+                        <li><a href="galerija.html">Galerija</a></li>
+                        <li><a href="animacije.html">Animacije</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="tabela.html">Tabela</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i>YouTube</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a></li>
+                        <li><a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i>Pinterest</a></li>
+                    </ul>
+                </div>
+            </footer>
+            <hr>
+            <p><i class="far fa-copyright"></i>CopyRight 2020/21</p>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
